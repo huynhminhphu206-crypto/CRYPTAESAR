@@ -1,0 +1,46 @@
+
+1. OVERVIEW
+A custom message encryption and decryption system inspired by
+classical cryptography.
+
+2. CHARACTER CONVERSION
+- Convert each character into its corresponding Unicode value.
+- Process the numeric values.
+- Convert the resulting values back into characters.
+
+3. ENCRYPTION MECHANISM
+- Receive the original message.
+- Convert characters into Unicode values.
+- Add the generated numeric key to each value.
+- Convert the resulting values back into characters.
+
+4. DECRYPTION MECHANISM
+- Receive the encrypted message.
+- Convert characters into Unicode values.
+- Subtract the same numeric key.
+- Convert the resulting values back into characters.
+
+5. KEY GENERATION MECHANISM
+- Receive a numeric string.
+- Traverse the string according to the custom pairing rule.
+- Determine whether to use addition or subtraction.
+- Calculate the resulting numeric key.
+
+6. MESSAGE EXCHANGE
+- The sender encrypts the original message.
+- The sender shares the ciphertext and numeric code.
+- The receiver enters the ciphertext and numeric code.
+- The application generates the key and decrypts the message.
+
+7. TESTING
+- English characters.
+- Vietnamese characters.
+- Special symbols.
+- Unicode characters outside the Basic Multilingual Plane.
+- Empty input and invalid numeric input.
+
+8. TECHNICAL NOTES
+- JavaScript implementation.
+- Unicode code point handling.
+- Encryption and decryption consistency.
+- Known limitations.
